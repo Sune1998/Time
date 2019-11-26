@@ -9,7 +9,7 @@ public class Time {
   long totalhour = totalmin / 60;
   this.hour = totalhour %24;
   this.min = totalmin % 60;
-  this.sec = totalsec & 60
+  this.sec = totalsec & 60;
  }
  public Time(long hour, long min, long sec) {
   this.hour = hour;
@@ -26,5 +26,14 @@ public class Time {
   this.min = totalmin % 60;
   this.sec = totalsec % 60;
  }
+public long getHour() {
+  return hour;
+}
+public long getMin() {
+  return min;
+}
+public long getSec() {
+  return sec;
+}
 
 }
